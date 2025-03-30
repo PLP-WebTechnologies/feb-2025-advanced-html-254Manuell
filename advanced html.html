@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenyan Registration Portal</title>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>Project Milestones</h2>
+        <ol type="I">
+            <li>Requirement Analysis</li>
+            <li>System Design</li>
+            <li>Development Phase</li>
+            <li>User Testing</li>
+            <li>Launch Date</li>
+        </ol>
+    </section>
+
+    <!-- Kenyan Landscape Image -->
+    <section>
+        <h2>Beautiful Kenya</h2>
+        <img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg" 
+             alt="Samburu warriors in traditional dress" 
+             width="600"
+             style="border-radius: 8px;">
+    </section>
+
+    <!-- Kenyan Contacts Table -->
+    <section>
+        <h2>Business Contacts</h2>
+        <table border="1" cellpadding="8">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Wanjiku Mwangi</td>
+                    <td>123 Koinange Street, Nairobi</td>
+                    <td>0712 345678</td>
+                    <td>wanjiku.m@company.co.ke</td>
+                </tr>
+                <tr>
+                    <td>Kipchoge Keino</td>
+                    <td>456 Moi Avenue, Mombasa</td>
+                    <td>0723 456789</td>
+                    <td>kipchoge.k@organisation.ke</td>
+                </tr>
+                <tr>
+                    <td>Amina Mohamed</td>
+                    <td>789 Uhuru Highway, Nakuru</td>
+                    <td>0734 567890</td>
+                    <td>amina.m@business.co.ke</td>
+                </tr>
+                <tr>
+                    <td>Omondi Otieno</td>
+                    <td>321 Mama Ngina Drive, Kisumu</td>
+                    <td>0745 678901</td>
+                    <td>omondi.o@enterprise.ke</td>
+                </tr>
+                <tr>
+                    <td>Njeri Kamau</td>
+                    <td>654 Tom Mboya Street, Eldoret</td>
+                    <td>0756 789012</td>
+                    <td>njeri.k@firm.co.ke</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Kenyan Registration Form -->
+    <section>
+        <h2>Kenyan Citizen Registration</h2>
+        <form id="registrationForm" novalidate>
+            <fieldset>
+                <legend>Personal Details</legend>
+                
+                <div>
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" 
+                           required placeholder="Enter your full name"
+                           minlength="3" maxlength="50">
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"
+                           required placeholder="example@domain.co.ke"
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password"
+                           required minlength="8"
+                           placeholder="Minimum 8 characters">
+                </div>
+
+                <div>
+                    <label for="birthDate">Birth Date:</label>
+                    <input type="date" id="birthDate" name="birthDate"
+                           required max="2004-01-01">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <div>
+                    <label for="county">County:</label>
+                    <select id="county" name="county" required>
+                        <option value="">-- Chagua County --</option>
+                        <option value="Nairobi">Nairobi</option>
+                        <option value="Mombasa">Mombasa</option>
+                        <option value="Kisumu">Kisumu</option>
+                        <option value="Nakuru">Nakuru</option>
+                        <option value="Uasin Gishu">Uasin Gishu</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p>Mobile Operator:</p>
+                    <label>
+                        <input type="radio" name="operator" value="safaricom" required>
+                        Safaricom
+                    </label>
+                    <label>
+                        <input type="radio" name="operator" value="airtel">
+                        Airtel
+                    </label>
+                    <label>
+                        <input type="radio" name="operator" value="telkom">
+                        Telkom
+                    </label>
+                </div>
+
+                <div>
+                    <p>Services Needed:</p>
+                    <label>
+                        <input type="checkbox" name="services" value="maisha">
+                        Maisha Number
+                    </label>
+                    <label>
+                        <input type="checkbox" name="services" value="huduma">
+                        Huduma Namba
+                    </label>
+                    <label>
+                        <input type="checkbox" name="services" value="kra">
+                        KRA PIN
+                    </label>
+                </div>
+            </fieldset>
+
+            <button type="submit">Sajili Sasa</button>
+        </form>
+    </section>
+
+    <!-- Local Multimedia -->
+    <section>
+        <h2>Kenyan Content</h2>
+        
+        <div>
+            <h3>Kenyan Wildlife Documentary</h3>
+            <video controls width="600" poster="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg">
+                <source src="https://cdn.pixabay.com/vimeo/722006310/kenya-133441.mp4?width=1280&hash=8f9a2e4f5d5d5e5e5e5e5e5e5e5e5e5e5e5e5e5" 
+                        type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <p>Video: <em>"Wildlife in Maasai Mara"</em> (Credit: Pixabay)</p>
+        </div>
+
+        <div>
+            <h3>Traditional Kikuyu Music</h3>
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" 
+                        type="audio/mpeg">
+                Your browser does not support HTML5 audio.
+            </audio>
+        </div>
+    </section>
+</body>
+</html>
